@@ -1,0 +1,22 @@
+Para actualizar el token debemos usar el servio:
+
+Metodo Post
+URL = https://accounts.spotify.com/api/token
+
+Typo: Form URL Encoded
+Enviar en el m[etodo post lo sighuiete 
+grant_type      => client_credentials
+client_id       => d6b55734aa3f4b49af89ae8023b6c69e
+client_secret   => 4659ca881ead4eed81c45197f071db34
+
+Esto nos arrojara un token como el siguiente objeto:
+
+{
+  "access_token": "BQD_w8EOIzLheGNHHeGGrtIVrNVs0jsH1R4RxQZd0oBUb2MXqxxaWO_TLtXoQUtcFqQuQLnH2kc8MnR7iYE",
+  "token_type": "Bearer",
+  "expires_in": 3600
+}
+
+Entonces el access_token es que usaremos en la variable SpotifyAPIKey Ubicada dentro de enviroment
+con esto podremos usar el Metodo Get para hacer el consumo de la APi de spotify
+

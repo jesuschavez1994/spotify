@@ -1,0 +1,18 @@
+<div class='container'>
+    <p>
+        <input 
+            #search
+            type="text"
+            [value]="query"
+            (keydown.enter)="submit(search.value)"
+        />
+        <button (click)="submit(search.value)">Search</button>
+    </p>
+
+    <div *ngIf="results">
+        <h1>Results</h1>
+        <div class="card-group">
+            <app-list *ngFor="let item of results; let i=index" [results]="item" ></app-list>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<ng-container>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mr-2 ml-2" style="width: 18rem;">
+                <img src="{{ results.album.images[0].url }}" class="card-img-top">
+                <div class="card-body">
+                    <a [routerLink]="['/artists', results.artists[0].id]">
+                        {{ results.artists[0].name }}
+                    </a>
+                    <p class="card-text">
+                        <a [routerLink]="['/tracks', results.id]">
+                            {{ results.name }}
+                        </a>
+                        <br>
+                        <small class="text-muted">{{results.album.name}}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

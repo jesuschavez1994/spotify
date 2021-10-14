@@ -1,0 +1,4 @@
+export const SpotifyAPIKey = 'BQD_w8EOIzLheGNHHeGGrtIVrNVs0jsH1R4RxQZd0oBUb2MXqxxaWO_TLtXoQUtcFqQuQLnH2kc8MnR7iYE';
+
+//client_ID: d6b55734aa3f4b49af89ae8023b6c69e
+//client_secret: 4659ca881ead4eed81c45197f071db34
